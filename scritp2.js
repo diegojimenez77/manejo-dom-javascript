@@ -5,3 +5,16 @@ function addparrafo(){
 
     div.appendChild(parr)
 }
+
+const abrir = document.getElementById("abrir")
+const cerrar = document.getElementById("cerrar")
+
+let ventana
+
+abrir.addEventListener("click",() => {
+    ventana = window.open("https://ed.team", "_blank", "width=500, height=300")
+})
+
+cerrar.addEventListener("click", () => {
+    ventana.close()
+})
