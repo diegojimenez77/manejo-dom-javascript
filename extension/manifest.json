@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "EDjs-dom",
+    "version": "0.0.5",
+    "description": "Una extension para modificar el DOM de cualquier sitio",
+    "icons":{
+        "16":"diamante-16.png",
+        "24":"diamante-24.png",
+        "32":"diamante-32.png",
+        "64":"diamante-64.png",
+        "128":"diamante-128.png"
+    },
+    "action":{
+        "default_title":"Click to view a popup",
+        "default_popup":"popup.html"
+    },
+    "content_scripts":[
+        {
+        "matches": ["https://*.ed.team/*"],
+        "css": ["ed.css"],
+        "js": ["ed.js"]
+        }
+    ]
+}
